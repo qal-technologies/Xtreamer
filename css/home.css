@@ -1,0 +1,196 @@
+       /* Global styling  */
+       *{
+        text-decoration: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Body of the page */
+    body{
+        background-attachment: local;
+        background: rgb(250, 250, 250);
+        background-size: cover;
+        background-position: 100%;
+        user-zoom: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    /* fOR HEADER  */
+    header{
+        margin: 0;
+        padding: 5px;
+        width: 100%;
+        height: 2em;
+        background-color: white;
+        box-shadow:0px 0px 3px grey;
+        border: none;
+    }
+    /* For the header name */
+    h1.name{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size: 20px;
+    }
+    
+    /* For all highlights */
+    .highlight{
+        color: rgb(0, 200, 200);
+    }
+    
+    
+    /* FOR SEARCH*/ 
+
+    /* for search div */
+    div.search{
+        display: block;
+        float: right;
+        margin-top: -22.5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* for the search span  */
+    span.searchs{
+        display: flex;
+        float: right;
+        padding: 5px;
+        color: rgb(0, 200, 200);
+        border: 0.5px solid rgb(240, 240, 240);
+        border-radius: 100%;
+        margin: 2px;
+        transition: all ease-in-out 400ms;
+    }  
+
+    /* Hover effect of the search icon  */
+    span.searchs:hover, span.searchs:active{
+        padding: 5px;
+        background-color: rgb(0, 200, 200);
+        border-radius: 100%;
+        justify-content: center;
+        border: 0.5px solid rgb(200, 200, 200);
+        align-items: center;
+        color: white;
+        font-weight: bolder;
+        box-shadow: 0px 0px 5px #e9f9f9;
+    }
+
+    /* For the search input  */
+    input.search, input.search:focus{
+        display: none;
+        width: auto;
+        box-shadow: 0px 0px 5px rgb(220, 220, 220);
+        height: fit-content;
+        padding: 2px;
+        font-size: 9px;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid grey;
+    }
+
+
+    /* NOTIFICATION DIV  */
+    div.notify{
+        display: block;
+        float: right;
+        margin-top: -22.5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* For the notification link*/
+    a.notifys{
+        display: flex;
+        float: right;
+        padding: 5px;
+        color: rgb(0, 200, 200);
+        margin: 2px;
+        transition: all ease-in-out 400ms;
+        border-radius: 100%;
+        border: 0.5px solid rgb(240, 240, 240);
+    }
+
+    /* Hover effect of the notification icon  */
+    a.notifys:hover, a.notifys:active{
+        padding: 5px;
+        background-color: rgb(0, 200, 200);
+        border-radius: 100%;
+        justify-content: center;
+        border: 0.5px solid rgb(200, 200, 200);
+        align-items: center;
+        color: white;
+        font-weight: bolder;
+        box-shadow: 0px 0px 5px #e9f9f9;
+    }
+    
+
+
+
+    /* FOR NAVIGATION  */
+    nav.main_nav{
+        display: grid;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+    }
+
+    /* For navigation list  */
+    a{
+        display: block;
+        padding: 10px;
+        border-top: 1px solid rgb(0, 200, 200);
+        background-color: white;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        margin-bottom: -10px;
+        transition: all ease-in-out 400ms;
+        user-select: none;
+    }
+    a.nav:hover, a.current{
+        margin-top: -2px;
+        color: rgb(0, 200, 200);
+        padding: 10px;
+        background-color: rgba(0, 200, 200, 0.08);
+    }
+    a.nav{
+        color: rgba(0, 200, 200, 0.46);
+    }
+    /* For navigation ul  */
+    nav.main_nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* For current hover  */
+    a.current, a.current:hover, a.current:active, a.nav:hover{
+        border-top: 2.5px solid rgb(0, 200, 200);
+        border-right: none;
+        color: rgb(0, 200, 200);
+        background-color: rgba(0, 200, 200, 0.08);
+    } 
+    a.current, a.current:hover, nav.main_nav ul a li path:hover{
+        color: rgb(0, 200, 200);
+    }
+
+    ul.main_nav a:last-child{
+        padding:16px ;
+    }
+    li.current{
+        color: rgb(0, 200, 200);
+    }
+    /* Navigation name */
+    p.nav_name{
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(0, 200, 200);
+    }
+
+    @media screen and (min-width:500px) {
+       
+    } 
